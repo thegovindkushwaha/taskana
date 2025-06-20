@@ -7,6 +7,7 @@
     "start": "ng serve",
     "start:hmr": "ng serve --hmr --no-live-reload",
     "build": "ng build",
+    "build:test": "ng build --output-path=../rest/taskana-rest-spring-example-boot/src/main/resources/static --base-href=/taskana/",
     "build:prod": "ng build --configuration production",
     "build:prod-silent": "ng build --configuration production --no-progress",
     "test": "jest",
