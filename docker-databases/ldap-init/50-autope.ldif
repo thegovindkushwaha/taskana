@@ -1,0 +1,47 @@
+# Organization
+dn: o=autope
+objectClass: organization
+o: autope
+
+# Organizational Units
+dn: ou=people,o=autope
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,o=autope
+objectClass: organizationalUnit
+ou: groups
+
+# Example Users
+dn: uid=govind,ou=people,o=autope
+objectClass: inetOrgPerson
+cn: Govind Kushwaha
+sn: Kushwaha
+uid: govind
+userPassword: govind123
+mail: govind@autope.com
+
+dn: uid=shubham,ou=people,o=autope
+objectClass: inetOrgPerson
+cn: Shubham Gwari
+sn: Gwari
+uid: shubham
+userPassword: shubham123
+mail: shubham@autope.com
+
+# Groups
+dn: cn=developers,ou=groups,o=autope
+objectClass: groupOfUniqueNames
+cn: developers
+uniqueMember: uid=govind,ou=people,o=autope
+uniqueMember: uid=shubham,ou=people,o=autope
+
+dn: cn=dev-admins,ou=groups,o=autope
+objectClass: groupOfUniqueNames
+cn: dev-admins
+uniqueMember: uid=shubham,ou=people,o=autope
+
+dn: cn=admins,ou=groups,o=autope
+objectClass: groupOfUniqueNames
+cn: admins
+uniqueMember: uid=admin,ou=people,o=autope
