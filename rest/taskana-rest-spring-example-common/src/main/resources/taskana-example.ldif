@@ -115,6 +115,21 @@ ou: Organisationseinheit/Organisationseinheit KSC/Organisationseinheit KSC 1
 cn: Titus Toll
 userPassword: teamlead-1
 
+dn: uid=govind,cn=users,OU=Test,O=TASKANA
+objectclass: inetorgperson
+objectclass: organizationalperson
+objectclass: person
+objectclass: top
+givenName: Govind
+description: Software Developer
+memberOf: cn=ksc-users,cn=groups,OU=Test,O=TASKANA
+memberOf: cn=Organisationseinheit KSC 1,cn=Organisationseinheit KSC,cn=organisation,OU=Test,O=TASKANA
+uid: govind
+sn: Kushwaha
+ou: Organisationseinheit/Organisationseinheit KSC/Organisationseinheit KSC 1
+cn: Govind Kushwaha
+userPassword: govind
+
 dn: uid=user-1-1,cn=users,OU=Test,O=TASKANA
 objectclass: inetorgperson
 objectclass: organizationalperson
@@ -391,6 +406,7 @@ uniquemember: uid=user-1-1,cn=users,OU=Test,O=TASKANA
 uniquemember: uid=user-1-2,cn=users,OU=Test,O=TASKANA
 uniquemember: uid=user-2-1,cn=users,OU=Test,O=TASKANA
 uniquemember: uid=user-2-2,cn=users,OU=Test,O=TASKANA
+uniquemember: uid=govind,cn=users,OU=Test,O=TASKANA
 cn: ksc-users
 objectclass: groupofuniquenames
 objectclass: top
@@ -450,6 +466,7 @@ dn: cn=Organisationseinheit KSC 1,cn=Organisationseinheit KSC,cn=organisation,OU
 uniquemember: uid=teamlead-1,cn=users,OU=Test,O=TASKANA
 uniquemember: uid=user-1-1,cn=users,OU=Test,O=TASKANA
 uniquemember: uid=user-1-2,cn=users,OU=Test,O=TASKANA
+uniquemember: uid=govind,cn=users,OU=Test,O=TASKANA
 cn: Organisationseinheit KSC 1
 objectclass: groupofuniquenames
 objectclass: top
